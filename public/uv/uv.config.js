@@ -9,5 +9,5 @@ self.__uv$config = {
   bundle: "/uv/uv.bundle.js",
   config: "/uv/uv.config.js",
   sw: "/uv/uv.sw.js",
-  bare: "https://bare-server.titaniumnetwork.workers.dev/",
+  bare: "https://bare.titaniumnetwork.workers.dev/",
 };
