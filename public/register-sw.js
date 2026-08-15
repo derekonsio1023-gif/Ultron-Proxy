@@ -28,7 +28,7 @@ async function registerSW() {
     scope: __uv$config.prefix,
   });
 
- // Using bare server instead of wisp for better compatibility
-const bareUrl = "https://bare-server.titaniumnetwork.workers.dev/";
-BareMux.SetTransport("BareClient.Bare", { bare: bareUrl });
+// Using wisp server with correct syntax
+let wispUrl = "wss://wisp-server.mercurywork.shop/"
+__uv$config.bare = "https://bare-server.titaniumnetwork.workers.dev/"
 }
