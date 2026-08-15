@@ -3,5 +3,5 @@ services:
     name: ultron-proxy-static
     env: static
     plan: free
-    buildCommand: npm install
+    buildCommand: echo "No build needed for static site"
     staticPublishDirectory: public
