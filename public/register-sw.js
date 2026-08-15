@@ -29,6 +29,6 @@ async function registerSW() {
   });
 
   // This is the line you change to change the wisp server (essential for static hosting ofc)
-  let wispUrl = "ws://nebulaproxy.io/wisp/"
+  let wispUrl = "wss://wisp.mercurywork.shop/"
   BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
 }
