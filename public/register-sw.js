@@ -28,7 +28,7 @@ async function registerSW() {
     scope: __uv$config.prefix,
   });
 
-  // This is the line you change to change the wisp server (essential for static hosting ofc)
-  let wispUrl = "wss://wisp-server.titaniumnetwork.workers.dev/"
-  BareMux.SetTransport("EpxMod.EpoxyClient", { wisp: wispUrl });
+ // Using bare server instead of wisp for better compatibility
+const bareUrl = "https://bare-server.titaniumnetwork.workers.dev/";
+BareMux.SetTransport("BareClient.Bare", { bare: bareUrl });
 }
