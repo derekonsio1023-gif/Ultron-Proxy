@@ -1,7 +1,7 @@
 services:
   - type: web
     name: ultron-proxy-static
-    env: static
+    env: node
     plan: free
-    buildCommand: echo "No build needed for static site"
-    staticPublishDirectory: public
+    buildCommand: npm install
+    startCommand: npm start
